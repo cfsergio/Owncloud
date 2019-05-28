@@ -7,7 +7,7 @@ apt install mysql-server -y
 
 mysql -u root -p
 CREATE DATABASE owncloud;
-CREATE USER owncloud@localhost IDENTIFIED BY 'alumneroot';
+CREATE USER owncloud@localhost IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON owncloud.* TO owncloud@localhost;
 flush privileges;
 exit
