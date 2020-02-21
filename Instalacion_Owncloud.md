@@ -1,4 +1,4 @@
-/* Intrucciones básicas para la instalación y configuración de Owncloud. */
+### Intrucciones básicas para la instalación y configuración de Owncloud
 /* =====================================================================*/
 
 apt update -y
