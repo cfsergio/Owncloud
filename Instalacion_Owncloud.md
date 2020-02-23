@@ -1,6 +1,6 @@
 ### Intrucciones básicas para la instalación y configuración de Owncloud
 
-```bash
+```shell
 apt update -y
 apt install apache2 -y
 apt install mysql-server -y
