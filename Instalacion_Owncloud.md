@@ -15,7 +15,7 @@ flush privileges;
 exit
 ```
 
-```bash
+```shell
 cd /tmp && wget https://download.owncloud.org/community/owncloud-10.0.8.zip 
 apt -y install unzip
 unzip owncloud-10.0.8.zip
@@ -25,7 +25,7 @@ chmod -R 755 /var/www/html/owncloud
 service apache2 restart
 ```
 
-```bash
+```shell
 vim /etc/apache2/sites-available/owncloud.conf
 ```
 
@@ -45,18 +45,18 @@ SetEnv HTTP_HOME /var/www/html/owncloud
 </Directory>
 ```
 
-```bash
+```shell
 a2ensite owncloud.conf
 service apache2 restart
 a2enmod rewrite headers env dir mime
 service apache2 restart
 ```
 
-```bash
+```shell
 apt-get -y install libapache2-mod-php7.0 php7.0 php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext php7.0-zip
 ```
 
-```bash
+```shell
 service apache2 restart
 ```
 
