@@ -84,4 +84,4 @@ service apache2 restart
 ***
 
 **Paso final.** 
-Acceder con un navegador a [http://direccionip/owncloud/owncloud](http://direccionip/owncloud/owncloud)
+Acceder con un navegador a la siguiente dirección [http://direccionip/owncloud/owncloud](http://direccionip/owncloud/owncloud)
