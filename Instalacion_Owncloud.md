@@ -6,8 +6,10 @@ apt install apache2 -y
 apt install mysql-server -y
 ```
 
-```sql
+```shell
 mysql -u root -p
+```
+```sql
 CREATE DATABASE owncloud;
 CREATE USER owncloud@localhost IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON owncloud.* TO owncloud@localhost;
