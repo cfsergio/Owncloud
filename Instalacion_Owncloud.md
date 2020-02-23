@@ -6,14 +6,16 @@ apt install apache2 -y
 apt install mysql-server -y
 ```
 
-
+```sql
 mysql -u root -p
 CREATE DATABASE owncloud;
 CREATE USER owncloud@localhost IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON owncloud.* TO owncloud@localhost;
 flush privileges;
 exit
+```
 
+```bash
 cd /tmp && wget https://download.owncloud.org/community/owncloud-10.0.8.zip 
 apt -y install unzip
 unzip owncloud-10.0.8.zip
@@ -21,6 +23,7 @@ mkdir -p /var/www/html/owncloud && mv owncloud /var/www/html/owncloud
 chown -R www-data:www-data /var/www/html/owncloud
 chmod -R 755 /var/www/html/owncloud
 service apache2 restart
+```
 
 vim /etc/apache2/sites-available/owncloud.conf
 Alias /owncloud "/var/www/html/owncloud/"
