@@ -7,6 +7,7 @@ apt install apache2 -y
 apt install mysql-server -y
 ```
 
+
 Segundo bloque de ejecución.
 ```shell
 mysql -u root -p
