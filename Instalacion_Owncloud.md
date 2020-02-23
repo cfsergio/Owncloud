@@ -8,6 +8,7 @@ apt install mysql-server -y
 ```
 
 ***
+
 Segundo bloque de ejecución.
 ```shell
 mysql -u root -p
@@ -20,6 +21,8 @@ flush privileges;
 exit
 ```
 
+***
+
 Tercer bloque de ejecución.
 ```shell
 cd /tmp && wget https://download.owncloud.org/community/owncloud-10.0.8.zip 
@@ -30,6 +33,8 @@ chown -R www-data:www-data /var/www/html/owncloud
 chmod -R 755 /var/www/html/owncloud
 service apache2 restart
 ```
+
+***
 
 Cuarto bloque de ejecución.
 ```shell
@@ -52,6 +57,8 @@ SetEnv HTTP_HOME /var/www/html/owncloud
 </Directory>
 ```
 
+***
+
 Quinto bloque de ejecución.
 ```shell
 a2ensite owncloud.conf
@@ -60,15 +67,21 @@ a2enmod rewrite headers env dir mime
 service apache2 restart
 ```
 
+***
+
 Sexto bloque de ejecución.
 ```shell
 apt-get -y install libapache2-mod-php7.0 php7.0 php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext php7.0-zip
 ```
 
+***
+
 Séptimo bloque de ejecución.
 ```shell
 service apache2 restart
 ```
+
+***
 
 Paso final.
 Acceder con un navegador a [http://direccionip/owncloud/owncloud](http://direccionip/owncloud/owncloud)
