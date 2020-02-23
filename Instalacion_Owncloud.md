@@ -7,7 +7,7 @@ apt install apache2 -y
 apt install mysql-server -y
 ```
 
-
+***
 Segundo bloque de ejecución.
 ```shell
 mysql -u root -p
@@ -36,7 +36,7 @@ Cuarto bloque de ejecución.
 vim /etc/apache2/sites-available/owncloud.conf
 ```
 
-```html
+```vim
 Alias /owncloud "/var/www/html/owncloud/"
 
 <Directory /var/www/html/owncloud/>
