@@ -1,9 +1,11 @@
 ### Intrucciones básicas para la instalación y configuración de Owncloud
-/* =====================================================================*/
 
+```bash
 apt update -y
 apt install apache2 -y
 apt install mysql-server -y
+```
+
 
 mysql -u root -p
 CREATE DATABASE owncloud;
