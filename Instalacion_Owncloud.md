@@ -83,5 +83,5 @@ service apache2 restart
 
 ***
 
-**Paso final.** \n
+**Paso final.** 
 Acceder con un navegador a [http://direccionip/owncloud/owncloud](http://direccionip/owncloud/owncloud)
