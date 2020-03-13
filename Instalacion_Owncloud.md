@@ -1,4 +1,4 @@
-# Intrucciones básicas para la instalación y configuración de Owncloud
+# Instrucciones básicas para la instalación y configuración de Owncloud
 
 **Primer bloque de ejecución.**
 ```shell
